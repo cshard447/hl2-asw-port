@@ -1,0 +1,39 @@
+//-----------------------------------------------------------------------------
+//	PROJECTS.VGC
+//
+//	Project Configurations for all Source(TM) Projects
+//-----------------------------------------------------------------------------
+
+/////////////////////////
+// Project definitions //
+/////////////////////////
+
+$Project "client"
+{
+	"game\client\client_hl2.vpc"		[($WIN32||$X360||$POSIX) && $HL2]
+	"game\client\client_episodic.vpc"	[($WIN32||$X360||$POSIX) && $EPISODIC]
+}
+
+$Project "game_shader_dx9"
+{
+	"materialsystem\stdshaders\game_shader_dx9_hl2.vpc" [$HL2]
+	"materialsystem\stdshaders\game_shader_dx9_episodic.vpc"  [$EPISODIC]
+}
+
+$Project "glview"
+{
+	"utils\glview\glview.vpc" [$WIN32]
+}
+
+$Project "height2normal"
+{
+	"utils\height2normal\height2normal.vpc" [$WIN32]
+}
+
+$Project "server"
+{
+	"game\server\server_hl2.vpc"		[($WIN32||$X360||$POSIX) && $HL2]
+	"game\server\server_episodic.vpc"	[($WIN32||$X360||$POSIX) && $EPISODIC]
+}
+
+

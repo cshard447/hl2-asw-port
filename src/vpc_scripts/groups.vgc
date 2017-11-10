@@ -1,0 +1,37 @@
+//-----------------------------------------------------------------------------
+//	GROUPS.VGC
+//
+//	Group Configurations for all Source(TM) Projects
+//-----------------------------------------------------------------------------
+
+///////////////////////
+// Group definitions //
+///////////////////////
+
+$Group "gamedlls"
+{
+	"client"
+	"server"
+}
+
+$Group "game"
+{
+	"client"
+	"server"
+	//"tier1"
+	//"vgui_controls"
+}
+
+$Group "shaders"
+{
+	"game_shader_dx9"
+}
+
+
+$Group "dedicated"
+{
+	"mathlib"
+	"server"
+	"tier1"
+}
+
